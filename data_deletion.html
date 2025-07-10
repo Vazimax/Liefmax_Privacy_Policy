@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account & Data - Liefmax</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #e74c3c;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 4px solid #f39c12;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .info-box {
+            background-color: #e8f4fd;
+            border: 1px solid #bee5eb;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .steps {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .step:before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            position: absolute;
+            left: -10px;
+            top: 0;
+        }
+        .steps {
+            counter-reset: step-counter;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        input[type="email"], input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #c0392b;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .data-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .delete-yes {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .delete-no {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .retention {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Your Liefmax Account & Data</h1>
+        
+        <div class="warning-box">
+            <h3>⚠️ Important Notice</h3>
+            <p><strong>Account deletion is permanent and cannot be undone.</strong> Once you delete your account, all your data will be permanently removed from our systems. Please make sure you want to proceed before submitting your request.</p>
+        </div>
+
+        <h2>What Happens When You Delete Your Account</h2>
+        <p>When you request account deletion, the following will occur:</p>
+        
+        <div class="info-box">
+            <h3>📋 Data Deletion Process</h3>
+            <ul>
+                <li><strong>Immediate Deletion:</strong> Your account will be deactivated within 24 hours</li>
+                <li><strong>Data Removal:</strong> All personal data will be permanently deleted within 30 days</li>
+                <strong>Complete Removal:</strong> You will lose access to all app features and data</li>
+            </ul>
+        </div>
+
+        <h2>Data That Will Be Deleted</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Deleted?</th>
+                    <th>Retention Period</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="delete-yes">
+                    <td><strong>Account Information</strong><br>Name, email, phone number, profile photo</td>
+                    <td>✅ Yes</td>
+                    <td>30 days</td>
+                </tr>
+                <tr class="delete-yes">
+                    <td><strong>User Content</strong><br>Posts, messages, reviews, ratings</td>
+                    <td>✅ Yes</td>
+                    <td>30 days</td>
+                </tr>
+                <tr class="delete-yes">
+                    <td><strong>Location Data</strong><br>Saved addresses, location history</td>
+                    <td>✅ Yes</td>
+                    <td>30 days</td>
+                </tr>
+                <tr class="delete-yes">
+                    <td><strong>Payment Information</strong><br>Payment methods, transaction history</td>
+                    <td>✅ Yes</td>
+                    <td>30 days</td>
+                </tr>
+                <tr class="delete-yes">
+                    <td><strong>App Usage Data</strong><br>Activity logs, preferences, settings</td>
+                    <td>✅ Yes</td>
+                    <td>30 days</td>
+                </tr>
+                <tr class="delete-no">
+                    <td><strong>Legal Records</strong><br>Transaction records required by law</td>
+                    <td>❌ No</td>
+                    <td>7 years (legal requirement)</td>
+                </tr>
+                <tr class="retention">
+                    <td><strong>Analytics Data</strong><br>Aggregated, anonymized usage statistics</td>
+                    <td>⚠️ Anonymized</td>
+                    <td>Retained for service improvement</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>How to Request Account Deletion</h2>
+        
+        <div class="steps">
+            <div class="step">
+                <strong>Step 1: Submit Deletion Request</strong><br>
+                Fill out the form below with your account information and reason for deletion.
+            </div>
+            <div class="step">
+                <strong>Step 2: Verification</strong><br>
+                We will verify your identity by sending a confirmation email to your registered email address.
+            </div>
+            <div class="step">
+                <strong>Step 3: Confirmation</strong><br>
+                Click the confirmation link in the email to finalize your deletion request.
+            </div>
+            <div class="step">
+                <strong>Step 4: Account Deactivation</strong><br>
+                Your account will be deactivated within 24 hours of confirmation.
+            </div>
+            <div class="step">
+                <strong>Step 5: Data Removal</strong><br>
+                All your personal data will be permanently deleted within 30 days.
+            </div>
+        </div>
+
+        <h2>Alternative Methods</h2>
+        <p>You can also request account deletion through:</p>
+        <ul>
+            <li><strong>In-App:</strong> Go to Settings → Account → Delete Account</li>
+            <li><strong>Email:</strong> Send a deletion request to privacy@liefmax.com</li>
+            <li><strong>Support:</strong> Contact our support team through the app</li>
+        </ul>
+
+        <h2>Request Account Deletion</h2>
+        <div class="contact-form">
+            <form action="mailto:privacy@liefmax.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="email">Email Address (associated with your account):</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your registered email address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number (if different from account):</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+                
+                <div class="form-group">
+                    <label for="reason">Reason for Deletion (optional):</label>
+                    <textarea id="reason" name="reason" placeholder="Please let us know why you're leaving. This helps us improve our service."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required> I understand that account deletion is permanent and cannot be undone
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required> I confirm that I want to delete my account and all associated data
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Deletion Request</button>
+            </form>
+        </div>
+
+        <div class="info-box">
+            <h3>📧 Contact Information</h3>
+            <p>If you have any questions about account deletion or need assistance:</p>
+            <ul>
+                <li><strong>Email:</strong> privacy@liefmax.com</li>
+                <li><strong>Response Time:</strong> We will respond to your request within 48 hours</li>
+                <li><strong>Processing Time:</strong> Account deletion is completed within 30 days</li>
+            </ul>
+        </div>
+
+        <h2>What Happens After Deletion</h2>
+        <ul>
+            <li><strong>Immediate:</strong> You will no longer be able to log in to your account</li>
+            <li><strong>Within 24 hours:</strong> Your account will be deactivated</li>
+            <li><strong>Within 30 days:</strong> All personal data will be permanently deleted</li>
+            <li><strong>Ongoing:</strong> Legal records may be retained as required by law</li>
+        </ul>
+
+        <div class="warning-box">
+            <h3>⚠️ Important Reminders</h3>
+            <ul>
+                <li>Download any important data before requesting deletion</li>
+                <li>Cancel any active delivery requests or transactions</li>
+                <li>Update any linked accounts or services</li>
+                <li>Consider deactivating your account temporarily instead of permanent deletion</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Liefmax. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        </div>
+    </div>
+</body>
+</html>
